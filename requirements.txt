@@ -1,6 +1,8 @@
 streamlit
 openai
-beautifulsoup4
-requests
-playwright
+numpy
+pandas
+fdf
+matplotlib
+unicodedata
 fpdf
