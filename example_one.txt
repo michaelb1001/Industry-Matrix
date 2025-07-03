@@ -1,0 +1,72 @@
+--- EXAMPLE 1 ---
+This is an example of a strong 2x2 quadrant-style analysis used by Everywhere Ventures, organized by value chain segments:
+
+
+
+In an era defined by unprecedented interconnectedness and rapid change, the global supply chain stands as the circulatory system of modern commerce. 
+Yet, recent years have starkly illuminated its vulnerabilities and inefficiencies. At Everywhere Ventures, we believe that technology is the key to building more
+ resilient, intelligent, and sustainable supply chains and we are looking to back founders tackling critical chokepoints across the entire value chain.
+
+We see the future of supply chains not as a linear process, but as an interconnected ecosystem. For our initial focus, we're honing in on four critical areas where we believe transformative innovation is happening:
+
+Global <> Manufacturing: Enhancing visibility and resilience from raw material to factory floor.
+
+Manufacturing <> Local/Last Mile: Bridging the gap between production and agile, localized delivery.
+
+Local/Last Mile <> Distribution: Optimizing the complex journey to the end consumer.
+
+Distribution <> Global: Leveraging data to create smarter, more responsive global networks.
+
+1. Global <> Manufacturing: Forging Resilient and Transparent Production Networks
+The journey from raw materials to finished goods is often a complex, opaque, and global undertaking. We're backing companies that bring clarity, predictability, and efficiency to this foundational stage.
+
+Anticipating and Mitigating Risk: In a world of constant flux, understanding multi-tier supply chain risks is paramount. Ceres Technology is at the forefront, leveraging an AI-powered platform and over 25,000 real-time datasets to help businesses predict and preempt disruptions months in advance.
+
+Streamlining Procurement: The direct procurement of materials, especially in sectors like construction, can be fraught with inefficiencies. MatBook is changing this by enabling direct sourcing of construction materials from manufacturers, offering full visibility and quality control through its tech-enabled platform.
+
+Ensuring Compliance and Sustainability: As global regulations tighten and consumer demand for ethical sourcing grows, comprehensive supply chain mapping is essential. Sourcemap provides a vital platform for this, allowing companies to monitor and verify their supply chains from end-to-end, ensuring compliance, tracking sustainability, and assessing risks.
+
+These companies exemplify the shift towards intelligent, transparent, and resilient global manufacturing networks.
+
+
+2. Manufacturing <> Local/Last Mile: Enabling Agile Production and Market Access
+Once goods are manufactured, the challenge shifts to getting them where they need to go, efficiently and flexibly. This is especially crucial for customized products or when serving dynamic local demands.
+
+Precision in Custom Manufacturing: For OEMs in North America, sourcing custom industrial components can be a fragmented process. Autana AI provides a digital platform that streamlines custom manufacturing, from die-casting to CNC machining, managing the entire process with software-driven precision and transparency.
+
+Building Brands with Integrated Logistics: Bringing innovative consumer products to market requires more than just a great idea; it demands robust product development, sourcing, and supply chain logistics. Caba Design excels here, creating and managing a portfolio of consumer brands by mastering these critical elements.
+
+Unlocking New Markets: For businesses in emerging economies, accessing global B2B trade can be transformative. Yumari is globalizing LatAm's B2B wholesale trade by streamlining the entire logistics process from supplier warehouse to buyer destination, delivering significant savings and opening up new avenues for growth.
+
+This nexus is about creating more responsive and adaptable connections between where things are made and where they are ultimately needed.
+
+3. Local/Last Mile <> Distribution: Revolutionizing the Final Frontier
+The "last mile" is famously the most complex and expensive part of the delivery chain. Innovation here is critical for customer satisfaction, cost efficiency, and sustainability. We are particularly excited by companies tackling this challenge head-on.
+
+Empowering Local Economies: In Africa's vibrant convenience economy, Boost is a B2B commerce platform digitizing operations for manufacturers and distributors with tools like WhatsApp ordering, fulfillment apps, and vital stock financing.
+
+The Future of Delivery: IONA Drones is pioneering autonomous drone technology to optimize last-mile deliveries, promising lower costs, quicker routes, and a greener footprint for shipping companies. Similarly, Nearfleet leverages AI and a novel "asset-light hub-and-spoke" model to offer affordable, scalable same-day delivery for pharmacies and retailers.
+
+Distributed Fulfillment & Optimized Networks: PackSmith is building a network of local distribution centers, enabling businesses to store inventory closer to customers for faster delivery. For the crucial trucking sector, SmartHop offers a booking and fleet management platform that empowers carriers and dispatchers to maximize profits and efficiency.
+
+Tackling Reverse Logistics and Sustainability: E-commerce returns are a growing challenge. Sway simplifies this with an easy-to-use solution for managing and automating product returns. And, focusing on broader sustainability, WATS provides a digital platform for businesses to manage and reduce waste, automating carbon footprint reporting and improving landfill diversion.
+
+These companies are redefining efficiency, speed, and sustainability at the crucial interface with the end customer.
+
+4. Distribution <> Global: Powering Intelligent and Integrated Global Flows
+Finally, tying everything together requires intelligent platforms that can manage inventory, forecast demand, and streamline operations across global distribution networks.
+
+Smarter Inventory Management: Bops AI is at the cutting edge, using its AI-driven platform to enhance Collaborative Planning, Forecasting, and Replenishment (CPFR) for consumer brands, reducing stockouts and excess inventory.
+
+Digitizing Maritime Operations: The maritime industry is a cornerstone of global trade. MagicPort connects maritime stakeholders through a digital collaboration platform, offering real-time intelligence and automation to streamline shipping and promote sustainability.
+
+Automating Freight Forwarding: Starboard provides AI-powered SaaS tools that automate and optimize freight forwarding operations, from quoting to invoice reconciliation, boosting productivity.
+
+Seamless Data Exchange: Efficient supply chains run on data. Switchboard is a supply chain integration platform that automates data exchange and transaction processes between trading partners via EDI and API integrations, reducing manual work and operational costs.
+
+These innovators are building the data-driven infrastructure for more synchronized and responsive global distribution.
+
+Connecting the Dots: Our Holistic View
+This isn’t about investing in isolated siloes. We believe the greatest value creation lies at the intersection of these domains. Innovations in global manufacturing visibility directly impact how goods are distributed locally. Advancements in last-mile delivery create new possibilities for manufacturers. Data-driven global distribution platforms inform smarter sourcing and production.
+
+The common threads running through our portfolio are the intelligent application of data, AI, automation, and platform models to solve entrenched problems and unlock new levels of efficiency, transparency, and sustainability.
