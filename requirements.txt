@@ -1,8 +1,5 @@
 streamlit
 openai
-numpy
 pandas
-fdf
 matplotlib
 unicodedata
-fpdf
