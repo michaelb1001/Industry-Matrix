@@ -20,7 +20,7 @@ def plot_quadrant_chart(axis_labels, quadrants):
     ax.text(1.02, 0.5, axis_labels["X-Axis"], ha='left', va='center', fontsize=12, rotation=270, transform=ax.transAxes)
     ax.text(-0.05, 0.5, axis_labels["-X-Axis"], ha='right', va='center', fontsize=12, rotation=90, transform=ax.transAxes)
 
-    # Quadrants
+    # Quadrant positions
     positions = {
         "Q1": (0.5, 0.5),
         "Q2": (-0.5, 0.5),
@@ -28,14 +28,23 @@ def plot_quadrant_chart(axis_labels, quadrants):
         "Q4": (0.5, -0.5)
     }
 
+    # RGB color (157,29,97) normalized to 0–1 scale
+    rgb_color = (157/255, 29/255, 97/255)
+
     for q, (x, y) in positions.items():
         companies = "\n".join(quadrants.get(q, []))
-        ax.text(x, y, companies, ha='center', va='center', fontsize=10, bbox=dict(boxstyle="round,pad=0.3", fc="lightgrey", ec="black"))
+        ax.text(
+            x, y, companies,
+            ha='center', va='center', fontsize=10,
+            color='white',  # white text
+            bbox=dict(boxstyle="round,pad=0.3", fc=rgb_color, ec="black")
+        )
 
     ax.set_xlim(-1, 1)
     ax.set_ylim(-1, 1)
     ax.axis('off')
     return fig
+
 
 import unicodedata
 
@@ -113,7 +122,7 @@ def extract_labels_and_quadrants(gpt_text):
 
     # Step 2: Split full text into 4 quadrant blocks (after each intersection header)
     intersection_blocks = re.split(r"\*\*(.+?) <> (.+?):.*\*\*", gpt_text)[1:]
-
+    print("Intersection blocks:", intersection_blocks)  # Debugging line to check split results
     quadrants = {}
 
     for i in range(0, len(intersection_blocks), 3):
@@ -121,11 +130,13 @@ def extract_labels_and_quadrants(gpt_text):
             continue
 
         q_label = f"Q{(i // 3) + 1}"
+        print("q_label:", q_label)  # Debugging line to check quadrant labels
         paragraph = intersection_blocks[i + 2]
 
         # 1. Try Markdown hyperlink
         match = re.search(r"\[([^\]]+)\]\((https?://[^\)]+)\)", paragraph)
         if match:
+            print("Markdown match found:", match.group(0))  # Debugging line to check match
             company_name = match.group(1).strip()
         else:
             # 2. Try "XYZ is a [example|leader|etc]"
@@ -135,11 +146,14 @@ def extract_labels_and_quadrants(gpt_text):
             )
             if fallback:
                 company_name = fallback.group(1).strip()
+                print("Fallback match found:", company_name)  # Debugging line to check fallback
             else:
                 # 3. Final fallback: first capitalized phrase in first bullet
+                print("No match found, trying bullet points extraction")  # Debugging line
                 bullets = re.findall(r"[-–•]\s+(.*)", paragraph)
                 if bullets:
                     cap_phrase = re.search(r"\b([A-Z][A-Za-z0-9 &|]{2,80})\b", bullets[0])
+                    print("Bullets found, cap phrase:", cap_phrase)
                     company_name = cap_phrase.group(1).strip() if cap_phrase else "⚠️ Not Found"
                 else:
                     company_name = "⚠️ Not Found"
@@ -241,7 +255,7 @@ Write all 4 intersections in the required format.
 [1 sentence description of the strategic importance of the intersection]
 
 - introducting the company in a fluid matter
-- [Hyperlinked Company Name] [Natural, flowing description of the company and why it fits here]
+- [Hyperlinked Company Name] [Natural, flowing description of the company and why it fits here]. The company name must be the first word. Still make it sound fluid but it has to be first hyperlinked so it can pull to the chart.
 
 - Here is an example for you to reference from example_one.txt: "Anticipating and Mitigating Risk: In a world of constant flux, understanding multi-tier supply chain risks is paramount. Ceres Technology is at the forefront, leveraging an AI-powered platform and over 25,000 real-time datasets to help businesses predict and preempt disruptions months in advance."
 
@@ -291,6 +305,7 @@ Company list:
 
             # 2️⃣ Extract dynamic axis & quadrant data from GPT output
             axis_labels, quadrants = extract_labels_and_quadrants(gpt_output)
+            
             if axis_labels:
                 fig = plot_quadrant_chart(axis_labels, quadrants)
                 st.pyplot(fig)
